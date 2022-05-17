@@ -35,7 +35,7 @@ def fix_indicatators(path_to_model, host_name):
                 model_id = cfg["model_id"]
                 if model_id in model_list:
                     if 'MMP' not in model_id:
-                        cfg['model']['indicators']['clickhouse']['enable'] = False
+                        cfg['model']['indicators']['clickhouse']['enable'] = True
                         cfg['model']['indicators']['clickhouse']['black_list'] = []
                         cfg['model']['indicators']['clickhouse']['white_list'] = []
                         with open(path, 'w') as f:
@@ -45,7 +45,7 @@ def fix_indicatators(path_to_model, host_name):
                 model_id = cfg["model_id"]
                 if model_id in model_list:
                     if 'MMP' not in model_id:
-                        cfg['model']['indicators']['clickhouse']['enable'] = False
+                        cfg['model']['indicators']['clickhouse']['enable'] = True
                         cfg['model']['indicators']['clickhouse']['black_list'] = []
                         cfg['model']['indicators']['clickhouse']['white_list'] = []
                         with open(path, 'w') as f:
@@ -73,4 +73,4 @@ def fix_fee(path_to_models):
     with open('crypto_futures.json', 'w') as f:
         json.dump(fee_configs, f, indent=2)
 
-fix_indicatators(path_to_model, 'os-prod-1')
+fix_indicatators(path_to_model, 'os-prod-2')
