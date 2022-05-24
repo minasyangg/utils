@@ -1,0 +1,10 @@
+USDT_MARGIN
+FLAPPY_OS_KSM_USDT_PERP| level_size_usdt: 57.0| max_pos_usdt: 113.0| price: 78.7
+FLAPPY_OS_LINK_USDT_PERP| level_size_usdt: 394.0| max_pos_usdt: 1182.0| price: 7.035
+FLAPPY_OS_LRC_USDT_PERP| level_size_usdt: 16.0| max_pos_usdt: 65.0| price: 0.5387
+FLAPPY_OS_SOL_USDT_PERP| level_size_usdt: 74.0| max_pos_usdt: 148.0| price: 49.448
+FLAPPY_OS_SUSHI_USDT_PERP| level_size_usdt: 39.0| max_pos_usdt: 116.0| price: 1.6066
+FLAPPY_OS_UNI_USDT_PERP| level_size_usdt: 79.0| max_pos_usdt: 79.0| price: 5.493
+IG11_OS_FTM_USDT_PERP| pos_step_usdt: 11.0| max_pos_usdt: 23.0| price: 0.4061
+IG11_OS_LINK_USDT_PERP| pos_step_usdt: 11.0| max_pos_usdt: 22.0| price: 7.001
+IG11_OS_UNI_USDT_PERP| pos_step_usdt: 66.0| max_pos_usdt: 132.0| price: 5.483

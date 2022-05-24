@@ -1,0 +1,10 @@
+USDT_MARGIN
+FLAPPY_OS_ADA_USDT_PERP| level_size_usdt: 454.0| max_pos_usdt: 909.0
+FLAPPY_OS_ALGO_USDT_PERP| level_size_usdt: 72.0| max_pos_usdt: 217.0
+FLAPPY_OS_ATOM_USDT_PERP| level_size_usdt: 70.0| max_pos_usdt: 140.0
+FLAPPY_OS_EOS_USDT_PERP| level_size_usdt: 68.0| max_pos_usdt: 270.0
+ATTENTION: max_pos/level_size: FLAPPY_OS_ETH_USDT_PERP, 0.2
+ATTENTION: max_pos/level_size: FLAPPY_OS_GALA_USDT_PERP, 0.4
+IG11_OS_ALGO_USDT_PERP| pos_step_usdt: 43.0| max_pos_usdt: 130.0
+IG11_OS_ATOM_USDT_PERP| pos_step_usdt: 70.0| max_pos_usdt: 140.0
+IG11_OS_ETH_USDT_PERP| pos_step_usdt: 1859.0| max_pos_usdt: 3719.0

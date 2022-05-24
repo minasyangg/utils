@@ -1,0 +1,7 @@
+USDT_MARGIN
+ATTENTION: max_pos/level_size: FLAPPY_OS_ANT_USDT_PERP, 0.3
+FLAPPY_OS_FIL_USDT_PERP| level_size_usdt: 70.0| max_pos_usdt: 140.0| price: 8.332
+FLAPPY_OS_MANA_USDT_PERP| level_size_usdt: 64.0| max_pos_usdt: 64.0| price: 1.0068
+IG11_OS_ANT_USDT_PERP| pos_step_usdt: 3.0| max_pos_usdt: 3.0| price: 1.978
+IG11_OS_STORJ_USDT_PERP| pos_step_usdt: 17.0| max_pos_usdt: 33.0| price: 0.5501
+ATTENTION: pos_step/max_pos: IG11_OS_WAVES_USDT_PERP, 0.3

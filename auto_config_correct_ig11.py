@@ -22,7 +22,6 @@ def fix_indicatators(path_to_model, host_name):
             try:
                 if host["name"] == host_name:
                     model_list = host['runners']
-
             except KeyError:
                 pass
     target_mid = []

@@ -1,0 +1,10 @@
+USDT_MARGIN
+FLAPPY_OS_ELON_USDT_PERP| level_size_usdt: 19.0| max_pos_usdt: 38.0| price: 4.865e-07
+FLAPPY_OS_ENS_USDT_PERP| level_size_usdt: 26.0| max_pos_usdt: 51.0| price: 12.17
+FLAPPY_OS_ICP_USDT_PERP| level_size_usdt: 6.0| max_pos_usdt: 22.0| price: 7.74
+ATTENTION: max_pos/level_size: FLAPPY_OS_MATIC_USDT_PERP, 0.3
+ATTENTION: max_pos/level_size: FLAPPY_OS_MINA_USDT_PERP, 0.3
+FLAPPY_OS_PEOPLE_USDT_PERP| level_size_usdt: 17.0| max_pos_usdt: 51.0| price: 0.026197
+FLAPPY_OS_SLP_USDT_PERP| level_size_usdt: 7.0| max_pos_usdt: 27.0| price: 0.00564
+IG11_OS_ICP_USDT_PERP| pos_step_usdt: 74.0| max_pos_usdt: 149.0| price: 7.74
+IG11_OS_PEOPLE_USDT_PERP| pos_step_usdt: 68.0| max_pos_usdt: 136.0| price: 0.026134

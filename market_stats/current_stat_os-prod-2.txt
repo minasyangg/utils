@@ -1,0 +1,10 @@
+USDT_MARGIN
+FLAPPY_OS_BAT_USDT_PERP| level_size_usdt: 46.0| max_pos_usdt: 139.0
+FLAPPY_OS_BTC_USDT_PERP| level_size_usdt: 705.0| max_pos_usdt: 1409.0
+FLAPPY_OS_DOGE_USDT_PERP| level_size_usdt: 464.0| max_pos_usdt: 464.0
+FLAPPY_OS_DOT_USDT_PERP| level_size_usdt: 60.0| max_pos_usdt: 299.0
+ATTENTION: max_pos/level_size: FLAPPY_OS_DYDX_USDT_PERP, 0.3
+FLAPPY_OS_ZIL_USDT_PERP| level_size_usdt: 20.0| max_pos_usdt: 81.0
+IG11_OS_BAT_USDT_PERP| pos_step_usdt: 12.0| max_pos_usdt: 23.0
+IG11_OS_BTC_USDT_PERP| pos_step_usdt: 3539.0| max_pos_usdt: 7078.0
+IG11_OS_ZIL_USDT_PERP| pos_step_usdt: 17.0| max_pos_usdt: 17.0
