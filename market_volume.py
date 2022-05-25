@@ -36,7 +36,7 @@ path_to_model = []
 
 
 
-df_stats = pd.read_csv(project_path + '/utils/market_stats/24_05_usdt.csv')
+df_stats = pd.read_csv(project_path + '/utils/market_stats/25.05_usdt.csv')
 df_stats_less_30 = df_stats[(df_stats['24h Range'] != '0%-10%') & (df_stats['24h Range'] != '10%-20%') & (df_stats['24h Range'] != '20%-30%') & (df_stats['Expiries'] == 'All')]
 df_stats_less_30 = df_stats_less_30.dropna().reset_index().drop(['index', '24h Taker Vol.', '24h Total Vol.', '24h Percentage', 'Monthly Maker Vol.', 'Monthly Taker Vol.', 'Monthly Total Vol.', 'Monthly Percentage'], 1)
 
@@ -137,7 +137,7 @@ def increase_usdt_margin(host_name, write_to_config):
                                     else: pass
 
 
-increase_usdt_margin('os-prod-6', True)
+increase_usdt_margin('os-prod-4', True)
 
 
 

@@ -1,13 +1,10 @@
 USDT_MARGIN
-FLAPPY_OS_CRV_USDT_PERP| level_size_usdt: 40.0| max_pos_usdt: 80.0| price: 1.2292
-FLAPPY_OS_DASH_USDT_PERP| level_size_usdt: 37.0| max_pos_usdt: 73.0| price: 61.2
-FLAPPY_OS_OMG_USDT_PERP| level_size_usdt: 30.0| max_pos_usdt: 30.0| price: 2.531
-FLAPPY_OS_QTUM_USDT_PERP| level_size_usdt: 26.0| max_pos_usdt: 52.0| price: 4.024
-FLAPPY_OS_SAND_USDT_PERP| level_size_usdt: 18.0| max_pos_usdt: 72.0| price: 1.2884
-ATTENTION: max_pos/level_size: FLAPPY_OS_XRP_USDT_PERP, 0.4
-FLAPPY_OS_XTZ_USDT_PERP| level_size_usdt: 54.0| max_pos_usdt: 161.0| price: 2.0636
-ATTENTION: max_pos/level_size: FLAPPY_OS_ZEC_USDT_PERP, 0.3
-IG11_OS_DASH_USDT_PERP| pos_step_usdt: 73.0| max_pos_usdt: 73.0| price: 61.04
-ATTENTION: pos_step/max_pos: IG11_OS_OMG_USDT_PERP, 0.2
-IG11_OS_SAND_USDT_PERP| pos_step_usdt: 27.0| max_pos_usdt: 108.0| price: 1.2871
-IG11_OS_XRP_USDT_PERP| pos_step_usdt: 1132.0| max_pos_usdt: 2265.0| price: 0.40441
+FLAPPY_OS_CRV_USDT_PERP| level_size_usdt: 59.0| max_pos_usdt: 119.0| price: 1.2358
+FLAPPY_OS_DASH_USDT_PERP| level_size_usdt: 75.0| max_pos_usdt: 150.0| price: 62.58
+FLAPPY_OS_OMG_USDT_PERP| level_size_usdt: 39.0| max_pos_usdt: 39.0| price: 2.498
+FLAPPY_OS_QTUM_USDT_PERP| level_size_usdt: 74.0| max_pos_usdt: 221.0| price: 4.084
+FLAPPY_OS_XTZ_USDT_PERP| level_size_usdt: 74.0| max_pos_usdt: 221.0| price: 2.0478
+FLAPPY_OS_ZEC_USDT_PERP| level_size_usdt: 64.0| max_pos_usdt: 192.0| price: 98.69
+ATTENTION: pos_step/max_pos: IG11_OS_DASH_USDT_PERP, 0.2
+ATTENTION: pos_step/max_pos: IG11_OS_OMG_USDT_PERP, 0.3
+IG11_OS_XRP_USDT_PERP| pos_step_usdt: 961.0| max_pos_usdt: 1922.0| price: 0.40033
