@@ -1,0 +1,3443 @@
+[
+    {
+        "name": "md-tokyo-prod",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 9,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "remote",
+            "target_exchanges": [
+                "huobi_global",
+                "ftx_futures",
+                "huobi_swap",
+                "huobi_usdt_swap",
+                "binance",
+                "binance_futures",
+                "binance_coin_futures",
+                "huobi_dm",
+                "ftx"
+            ],
+            "save_only_order_log": false,
+            "multiplexer_factor": 3
+        },
+        "public_ip": "52.193.57.152"
+    },
+    {
+        "name": "md-okex-prod",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 4,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "remote",
+            "target_exchanges": [
+                "okex_v5",
+                "okex_v5_futures",
+                "okex_v5_swap"
+            ],
+            "save_only_order_log": true,
+            "multiplexer_factor": 5
+        },
+        "public_ip": "47.242.130.13"
+    },
+    {
+        "name": "md-vg-prod",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 2,
+        "gateway_cores": 1,
+        "location": "virginia",
+        "db_type": "production",
+        "gateway": {
+            "type": "remote",
+            "target_exchanges": [
+                "coinbase"
+            ],
+            "save_only_order_log": false,
+            "multiplexer_factor": 5
+        },
+        "public_ip": "3.226.132.237"
+    },
+    {
+        "name": "bcf-prod-1",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 40000
+                    },
+                    "used_api": "dapi3"
+                },
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi3"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 6,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub6",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 19900
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_BCF_ETC_USD_PERP",
+            "FLAPPY_MMP_BCF_ETC_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_ETC_USD_PERP_WIDE",
+            "FLAPPY_BCF_BTC_USD_PERP",
+            "FLAPPY_BCF_BTC_USD_CQ",
+            "FLAPPY_BCF_BTC_USD_NQ",
+            "FLAPPY_BCF_ETH_USD_PERP",
+            "FLAPPY_BCF_ETH_USD_CQ",
+            "FLAPPY_BCF_ETH_USD_NQ",
+            "FLAPPY_BCF_ETH_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_BTC_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_BTC_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_BTC_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_BTC_USD_CQ_WIDE",
+            "FLAPPY_MMP_BCF_BTC_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_BTC_USD_NQ_WIDE",
+            "FLAPPY_BCF_FIL_USD_PERP",
+            "FLAPPY_MMP_BCF_FIL_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_FIL_USD_PERP_WIDE",
+            "FLAPPY_BCF_SAND_USD_PERP",
+            "FLAPPY_MMP_BCF_SAND_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_SAND_USD_PERP_WIDE",
+            "FLAPPY_BCF_MATIC_USD_PERP",
+            "FLAPPY_MMP_BCF_MATIC_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_MATIC_USD_PERP_WIDE",
+            "FLAPPY_BCF_GALA_USD_PERP",
+            "FLAPPY_MMP_BCF_GALA_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_GALA_USD_PERP_WIDE2",
+            "IG11_BCF_RUNE_USD_PERP",
+            "IG11_BCF_RUNE_USD_PERP2",
+            "IG11_BCF_APE_USD_PERP",
+            "IG11_MMP_BCF_APE_USD_PERP_THIN",
+            "IG11_MMP_BCF_APE_USD_PERP_WIDE"
+        ],
+        "public_ip": "54.168.93.240"
+    },
+    {
+        "name": "bcf-prod-2",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi3"
+                },
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi3"
+                }
+            ]
+        },
+        "cores": 4,
+        "gateway_cores": 2,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub4",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5900
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_BCF_XRP_USD_PERP",
+            "FLAPPY_MMP_BCF_XRP_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_XRP_USD_PERP_WIDE",
+            "FLAPPY_BCF_BTC_USD_PERP_WIDE"
+        ],
+        "public_ip": "52.69.113.223"
+    },
+    {
+        "name": "bcf-prod-3",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi3"
+                },
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi3"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 6,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub4",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5900
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "IG11_BCF_ETH_PERP",
+            "FLAPPY_BCF_LTC_USD_PERP",
+            "FLAPPY_BCF_DOT_USD_PERP",
+            "FLAPPY_BCF_EGLD_USD_PERP",
+            "FLAPPY_MMP_BCF_BNB_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_BNB_USD_CQ_WIDE",
+            "FLAPPY_BCF_BNB_USD_CQ",
+            "FLAPPY_MMP_BCF_DOT_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_DOT_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_ADA_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_ADA_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_LTC_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_LTC_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_EGLD_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_EGLD_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_XRP_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_XRP_USD_CQ_WIDE",
+            "FLAPPY_MMP_BCF_LTC_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_LTC_USD_CQ_WIDE",
+            "FLAPPY_MMP_BCF_TRX_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_TRX_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_LTC_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_LTC_USD_NQ_WIDE",
+            "FLAPPY_MMP_BCF_XRP_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_XRP_USD_NQ_WIDE",
+            "IG11_BCF_XTZ_USD_PERP",
+            "IG11_BCF_ALGO_USD_PERP",
+            "IG11_BCF_ICX_USD_PERP",
+            "IG11_BCF_GMT_USD_PERP",
+            "FLAPPY_BCF_AAVE_USD_PERP",
+            "FLAPPY_MMP_BCF_AAVE_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_AAVE_USD_PERP_WIDE",
+            "FLAPPY_BCF_SOL_USD_PERP",
+            "FLAPPY_BCF_SOL_USD_PERP3",
+            "FLAPPY_MMP_BCF_SOL_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_SOL_USD_PERP_WIDE",
+            "FLAPPY_BCF_BNB_USD_PERP",
+            "FLAPPY_BCF_BNB_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_BNB_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_BNB_USD_PERP_WIDE"
+        ],
+        "public_ip": "52.197.127.226"
+    },
+    {
+        "name": "bcf-prod-4",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi3"
+                },
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi3"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub5",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5900
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_BCF_DOGE_USD_PERP",
+            "FLAPPY_MMP_BCF_DOGE_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_DOGE_USD_PERP_WIDE"
+        ],
+        "public_ip": "52.194.54.185"
+    },
+    {
+        "name": "bcf-prod-5",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi3"
+                },
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi3"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5900
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_BCF_DOT_USD_CQ",
+            "FLAPPY_BCF_DOT_USD_NQ",
+            "FLAPPY_BCF_ADA_USD_NQ",
+            "FLAPPY_MMP_BCF_DOT_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_DOT_USD_CQ_WIDE",
+            "FLAPPY_MMP_BCF_DOT_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_DOT_USD_NQ_WIDE",
+            "FLAPPY_MMP_BCF_ADA_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_ADA_USD_CQ_WIDE",
+            "FLAPPY_MMP_BCF_ADA_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_ADA_USD_NQ_WIDE",
+            "FLAPPY_BCF_LINK_USD_PERP",
+            "FLAPPY_MMP_BCF_LINK_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_LINK_USD_PERP_WIDE"
+        ],
+        "public_ip": "54.168.214.11"
+    },
+    {
+        "name": "bcf-prod-6",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi5"
+                },
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi5"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5900
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_BCF_XLM_USD_PERP",
+            "FLAPPY_MMP_BCF_XLM_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_XLM_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_ETH_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_ETH_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_ETH_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_ETH_USD_CQ_WIDE",
+            "FLAPPY_MMP_BCF_ETH_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_ETH_USD_NQ_WIDE",
+            "FLAPPY_BCF_BNB_USD_NQ",
+            "FLAPPY_MMP_BCF_BNB_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_BNB_USD_NQ_WIDE",
+            "FLAPPY_BCF_BCH_USD_CQ",
+            "FLAPPY_MMP_BCF_BCH_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_BCH_USD_CQ_WIDE",
+            "FLAPPY_BCF_NEAR_USD_PERP",
+            "FLAPPY_MMP_BCF_NEAR_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_NEAR_USD_PERP_WIDE"
+
+        ],
+        "public_ip": "52.199.1.120"
+    },
+    {
+        "name": "bcf-prod-7",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi5"
+                },
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi5"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5900
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_BCF_BCH_USD_PERP",
+            "FLAPPY_MMP_BCF_BCH_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_BCH_USD_PERP_WIDE",
+            "FLAPPY_BCF_BCH_USD_NQ",
+            "FLAPPY_MMP_BCF_BCH_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_BCH_USD_NQ_WIDE",
+            "FLAPPY_BCF_LINK_USD_CQ",
+            "FLAPPY_MMP_BCF_LINK_USD_CQ_THIN",
+            "FLAPPY_MMP_BCF_LINK_USD_CQ_WIDE",
+            "FLAPPY_BCF_LINK_USD_NQ",
+            "FLAPPY_MMP_BCF_LINK_USD_NQ_THIN",
+            "FLAPPY_MMP_BCF_LINK_USD_NQ_WIDE",
+            "FLAPPY_BCF_AVAX_USD_PERP",
+            "FLAPPY_MMP_BCF_AVAX_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_AVAX_USD_PERP_WIDE",
+            "FLAPPY_MMP_BCF_AVAX_USD_PERP_WIDE2",
+            "FLAPPY_BCF_MANA_USD_PERP",
+            "FLAPPY_MMP_BCF_MANA_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_MANA_USD_PERP_WIDE"
+        ],
+        "public_ip": "54.238.53.24"
+    },
+    {
+        "name": "bcf-prod-8",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi7"
+                },
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi7"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub1",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5900
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_BCF_EOS_USD_PERP",
+            "FLAPPY_MMP_BCF_EOS_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_EOS_USD_PERP_WIDE",
+            "FLAPPY_BCF_ADA_USD_PERP",
+            "FLAPPY_BCF_ADA_USD_CQ",
+            "FLAPPY_BCF_UNI_USD_PERP",
+            "FLAPPY_MMP_BCF_UNI_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_UNI_USD_PERP_WIDE",
+            "FLAPPY_BCF_ATOM_USD_PERP",
+            "FLAPPY_MMP_BCF_ATOM_USD_PERP_THIN",
+            "FLAPPY_MMP_BCF_ATOM_USD_PERP_WIDE",
+            "IG11_BCF_VET_USD_PERP"
+        ],
+        "public_ip": "35.75.163.17"
+    },
+    {
+        "name": "bf-prod-1",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 20000
+                    },
+                    "used_api": "fapi3"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "dapi3"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 8,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub1",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 9950
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9999999
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_MMP_BF_YFI_USDT_PERP_THIN",
+            "IG11_BF_YFI_USDT_PERP",
+            "IG11_BF_TRX_USDT_PERP",
+            "FLAPPY_MMP_BF_XMR_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_XMR_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_IMX_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_IMX_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_ETC_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_ETC_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_THETA_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_THETA_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_NEAR_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_NEAR_USDT_PERP_WIDE",
+            "IG11_BF_BTC_USDT_PERP",
+            "IG11_BF_XMR_USDT_PERP",
+            "FLAPPY_MMP_BF_ADA_BUSD_PERP_THIN",
+            "FLAPPY_MMP_BF_ADA_BUSD_PERP_WIDE",
+            "FLAPPY_MMP_BF_SOL_BUSD_PERP_THIN",
+            "FLAPPY_MMP_BF_SOL_BUSD_PERP_WIDE",
+            "IG11_BF_SOL_BUSD_PERP",
+            "IG11_BF_GAL_USDT_PERP",
+            "IG11_BF_NEAR_USDT_PERP",
+            "IG11_BF_GMT_USDT_PERP2",
+            "FLAPPY_MMP_BF_GMT_USDT_PERP_WIDE",
+            "IG11_BF_ZEC_USDT_PERP",
+            "IG11_BF_APE_USDT_PERP",
+            "IG11_BF_XRP_BUSD_PERP",
+            "IG11_BF_UNI_USDT_PERP",
+            "IG11_BF_THETA_USDT_PERP",
+            "IG11_BF_FIL_USDT_PERP",
+            "IG11_BF_DOGE_USDT_PERP",
+            "IG11_BF_CHZ_USDT_PERP",
+
+            "IG11_BF_SXP_USDT_PERP",
+            "IG11_BF_ZRX_USDT_PERP",
+            "IG11_BF_RUNE_USDT_PERP",
+            "IG11_BF_ZIL_USDT_PERP"
+        ],
+        "public_ip": "54.178.6.192"
+    },
+    {
+    "name": "axf-prod-1",
+    "public_ip": "54.65.156.106",
+    "ip": {
+      "172.31.44.126": [
+        {
+          "exchange": "apollox_futures",
+          "rate_limit": {
+            "interval": 60000000,
+            "limit": 9560
+          },
+          "used_api": "default"
+        }
+      ]
+    },
+    "cores": 8,
+    "gateway_cores": 3,
+    "location": "tokyo",
+    "db_type": "production",
+    "gateway": {
+      "type": "local",
+      "save_only_order_log": true,
+      "multiplexer_factor": 5,
+      "accounts": [
+        {
+          "account_id": "sub1",
+          "exchange": "apollox_futures",
+          "orders_rate_limit_1min": {
+            "interval": 60000000,
+            "limit": 1200
+          },
+          "orders_fill_rate_limit": {
+            "interval": 600000000,
+            "limit": 100000000
+          }
+        }
+      ]
+    },
+    "runners": [
+      "IG11_AXF_BTC_USDT_PERP",
+      "IG11_AXF_ETH_USDT_PERP"
+    ]
+  },
+    {
+        "name": "bf-prod-2",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 20000
+                    },
+                    "used_api": "fapi3"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "dapi3"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub2",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 9950
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9999999
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "IG11_BF_AAVE_USDT_PERP",
+            "FLAPPY_MMP_BF_FIL_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_FIL_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_UNI_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_UNI_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_VET_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_VET_USDT_PERP_WIDE",
+            "IG11_BF_ADA_BUSD_PERP",
+            "IG11_BF_BNB_BUSD_PERP",
+            "FLAPPY_MMP_BF_GMT_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_FTT_BUSD_PERP_THIN",
+            "FLAPPY_MMP_BF_FTT_BUSD_PERP_WIDE",
+            "FLAPPY_MMP_BF_AAVE_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_AAVE_USDT_PERP_WIDE",
+            "IG11_BF_VET_USDT_PERP",
+            "IG11_BF_OMG_USDT_PERP",
+            "IG11_BF_AVAX_BUSD_PERP",
+            "IG11_BF_NEAR_BUSD_PERP",
+            "IG11_BF_APE_BUSD_PERP",
+            "IG11_BF_GMT_BUSD_PERP",
+            "IG11_BF_OP_USDT_PERP"
+        ],
+        "public_ip": "18.180.174.122"
+    },
+    {
+        "name": "bf-prod-3",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 40000
+                    },
+                    "used_api": "fapi3"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "dapi3"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub3",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 9950
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9999999
+                    }
+                },
+                {
+                    "account_id": "sub5",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 9950
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9999999
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_MMP_BF_DOT_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_DOT_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_OMG_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_OMG_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_DOGE_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_DOGE_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_TRX_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_TRX_USDT_PERP_WIDE",
+            "FLAPPY_BF_BTC_USDT_CQ",
+            "FLAPPY_BF_ETH_USDT_CQ",
+            "FLAPPY_BF_DOGE_BUSD_PERP",
+            "FLAPPY_BF_BNB_BUSD_PERP",
+            "IG11_BF_DOGE_BUSD_PERP",
+            "FLAPPY_MMP_BF_BNB_BUSD_PERP_THIN",
+            "FLAPPY_MMP_BF_BNB_BUSD_PERP_WIDE",
+            "IG11_BF_LRC_USDT_PERP",
+            "IG11_BF_ANC_BUSD_PERP",
+            "IG11_BF_DODO_BUSD_PERP",
+            "IG11_BF_TRX_BUSD_PERP"
+        ],
+        "public_ip": "13.113.214.61"
+    },
+    {
+        "name": "bf-prod-4",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 20000
+                    },
+                    "used_api": "fapi3"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "dapi3"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 6,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub4",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 9950
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9999999
+                    }
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_MMP_BF_DOGE_BUSD_PERP_THIN",
+            "FLAPPY_MMP_BF_DOGE_BUSD_PERP_WIDE",
+            "FLAPPY_MMP_BF_GRT_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_GRT_USDT_PERP_WIDE",
+            "IG11_BF_AVAX_USDT_PERP",
+            "IG11_BF_SAND_USDT_PERP",
+            "FLAPPY_MMP_BF_SAND_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_SAND_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_EGLD_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_EGLD_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_ZEC_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_ZEC_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_IOST_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_IOST_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_ZIL_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_ZIL_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_ZRX_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_ZRX_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_PEOPLE_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_PEOPLE_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_WAVES_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_WAVES_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_RUNE_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_RUNE_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_XRP_BUSD_PERP_THIN",
+            "FLAPPY_MMP_BF_XRP_BUSD_PERP_WIDE",
+            "FLAPPY_MMP_BF_CHZ_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_CHZ_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_ADA_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_ADA_USDT_PERP_WIDE",
+            "IG11_BF_IMX_USDT_PERP",
+            "IG11_BF_PEOPLE_USDT_PERP",
+            "FLAPPY_MMP_BF_APE_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_APE_USDT_PERP_WIDE",
+            "IG11_BF_GRT_USDT_PERP",
+            "IG11_BF_WAVES_USDT_PERP",
+            "IG11_BF_IOST_USDT_PERP",
+            "FLAPPY_MMP_BF_SXP_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_SXP_USDT_PERP_WIDE",
+            "FLAPPY_MMP_BF_LRC_USDT_PERP_THIN",
+            "FLAPPY_MMP_BF_LRC_USDT_PERP_WIDE",
+            "IG11_BF_GAL_BUSD_PERP",
+            "IG11_BF_FTM_BUSD_PERP",
+            "IG11_BF_GALA_BUSD_PERP"
+        ],
+        "public_ip": "13.113.104.252"
+    },
+    {
+        "name": "of-prod-1",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub_1",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_2",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_3",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_4",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_5",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_6",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_8",
+                    "exchange": "okex_v5_futures"
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_OF_BCH_USD_CW",
+            "FLAPPY_OF_BCH_USD_NW",
+            "FLAPPY_OF_BCH_USDT_CW",
+            "FLAPPY_OF_BCH_USDT_NW",
+            "FLAPPY_OF_BCH_USD_CQ",
+            "FLAPPY_OF_BCH_USD_NQ",
+            "FLAPPY_OF_BCH_USDT_CQ",
+            "FLAPPY_OF_BCH_USDT_NQ",
+            "FLAPPY_OF_ETH_USD_CQ",
+            "IG11_OF_ETH_USD_CQ",
+            "IG11_MMP_OF_ETH_USD_CQ_THIN",
+            "FLAPPY_OF_ETH_USD_NQ",
+            "FLAPPY_OF_ETH_USDT_NQ",
+            "FLAPPY_OF_ETH_USD_CW",
+            "FLAPPY_OF_ETH_USD_NW",
+            "FLAPPY_OF_ETH_USDT_NW",
+            "FLAPPY_MMP_OF_ETH_USD_CQ_THIN",
+            "FLAPPY_OF_ETH_USDT_CQ",
+            "IG11_OF_ETH_USDT_CQ",
+            "IG11_MMP_OF_ETH_USDT_CQ_THIN",
+            "FLAPPY_MMP_OF_ETH_USDT_CQ_THIN",
+            "FLAPPY_OF_LTC_USD_CW",
+            "FLAPPY_OF_LTC_USD_NW",
+            "FLAPPY_OF_LTC_USDT_CW",
+            "FLAPPY_OF_LTC_USDT_NW",
+            "FLAPPY_OF_LTC_USD_CQ",
+            "FLAPPY_OF_LTC_USD_NQ",
+            "FLAPPY_OF_LTC_USDT_CQ",
+            "FLAPPY_OF_LTC_USDT_NQ"
+        ],
+        "public_ip": "47.242.43.189"
+    },
+    {
+        "name": "of-prod-3",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub_1",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_2",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_3",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_4",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_5",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_6",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_8",
+                    "exchange": "okex_v5_futures"
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_OF_ADA_USD_CW",
+            "FLAPPY_OF_ADA_USD_NW",
+            "FLAPPY_OF_ADA_USDT_CW",
+            "FLAPPY_OF_ADA_USDT_NW",
+            "FLAPPY_OF_ADA_USD_CQ",
+            "FLAPPY_OF_ADA_USD_NQ",
+            "FLAPPY_OF_ADA_USDT_CQ",
+            "FLAPPY_OF_ADA_USDT_NQ",
+            "FLAPPY_OF_BTC_USD_CW",
+            "FLAPPY_OF_BTC_USD_NW",
+            "FLAPPY_OF_BTC_USDT_CW",
+            "FLAPPY_OF_BTC_USDT_NW",
+            "FLAPPY_OF_BTC_USD_CQ",
+            "IG11_OF_BTC_USD_CQ",
+            "IG11_MMP_OF_BTC_USD_CQ_THIN",
+            "FLAPPY_OF_BTC_USD_NQ",
+            "FLAPPY_OF_BTC_USDT_CQ",
+            "IG11_OF_BTC_USDT_CQ",
+            "IG11_MMP_OF_BTC_USDT_CQ_THIN",
+            "FLAPPY_OF_BTC_USDT_NQ",
+            "FLAPPY_MMP_OF_BTC_USD_CQ_THIN",
+            "FLAPPY_MMP_OF_BTC_USDT_CQ_THIN",
+            "FLAPPY_OF_FIL_USD_CW",
+            "FLAPPY_OF_FIL_USD_NW",
+            "FLAPPY_OF_FIL_USD_CQ",
+            "FLAPPY_OF_FIL_USD_NQ",
+            "FLAPPY_OF_FIL_USDT_CW",
+            "FLAPPY_OF_FIL_USDT_NW",
+            "FLAPPY_OF_FIL_USDT_CQ",
+            "FLAPPY_OF_FIL_USDT_NQ",
+            "FLAPPY_OF_ETC_USD_CW",
+            "FLAPPY_OF_ETC_USD_NW",
+            "FLAPPY_OF_ETC_USD_CQ",
+            "FLAPPY_OF_ETC_USD_NQ"
+        ],
+        "public_ip": "47.242.241.229"
+    },
+    {
+        "name": "os-prod-1",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 3,
+            "accounts": [
+                {
+                    "account_id": "sub_9",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub_10",
+                    "exchange": "okex_v5_swap"
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_OS_AVAX_USDT_PERP",
+            "FLAPPY_OS_AVAX_USD_PERP",
+            "FLAPPY_MMP_OS_ALGO_USDT_PERP_WIDE",
+            "FLAPPY_OS_ADA_USDT_PERP",
+            "FLAPPY_OS_ETH_USDT_PERP",
+            "FLAPPY_MMP_OS_ETH_USDT_PERP_WIDE",
+            "FLAPPY_OS_ETH_USD_PERP",
+            "FLAPPY_MMP_OS_ETH_USD_PERP_WIDE",
+            "FLAPPY_OS_EOS_USDT_PERP",
+            "FLAPPY_MMP_OS_GALA_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_GALA_USDT_PERP_THIN"
+        ],
+        "public_ip": "47.243.199.141"
+    },
+    {
+        "name": "os-prod-2",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 3,
+            "accounts": [
+                {
+                    "account_id": "sub_9",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub_10",
+                    "exchange": "okex_v5_swap"
+                }
+
+
+
+            ]
+        },
+        "runners": [
+                    "FLAPPY_MMP_OS_BAT_USDT_PERP_WIDE",
+                    "FLAPPY_OS_BTC_USDT_PERP",
+                    "FLAPPY_MMP_OS_BTC_USDT_PERP_WIDE",
+                    "FLAPPY_OS_BTC_USD_PERP",
+                    "FLAPPY_MMP_OS_BTC_USD_PERP_WIDE",
+                    "FLAPPY_OS_DYDX_USDT_PERP",
+                    "FLAPPY_MMP_OS_DYDX_USDT_PERP_WIDE",
+                    "FLAPPY_MMP_OS_DOGE_USDT_PERP_WIDE",
+                    "FLAPPY_OS_DOGE_USD_PERP",
+                    "FLAPPY_MMP_OS_DOGE_USD_PERP_WIDE",
+                    "FLAPPY_MMP_OS_DOT_USDT_PERP_WIDE",
+                    "FLAPPY_MMP_OS_LTC_USDT_PERP_WIDE",
+                    "FLAPPY_MMP_OS_LTC_USD_PERP_WIDE",
+                    "FLAPPY_MMP_OS_ZIL_USDT_PERP_THIN",
+                    "FLAPPY_MMP_OS_ZIL_USDT_PERP_WIDE"
+                ],
+
+        "public_ip": "8.218.9.242"
+    },
+    {
+        "name": "os-prod-3",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 3,
+            "accounts": [
+                {
+                    "account_id": "sub_9",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub_10",
+                    "exchange": "okex_v5_swap"
+                }
+
+            ]
+        },
+        "runners": [
+            "FLAPPY_MMP_OS_CRV_USDT_PERP_WIDE",
+            "FLAPPY_OS_TRX_USDT_PERP",
+            "FLAPPY_OS_TRX_USD_PERP",
+            "FLAPPY_OS_XLM_USDT_PERP",
+            "FLAPPY_OS_XLM_USD_PERP",
+            "FLAPPY_MMP_OS_XLM_USDT_PERP_WIDE",
+            "FLAPPY_OS_XTZ_USDT_PERP",
+            "FLAPPY_MMP_OS_QTUM_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_QTUM_USD_PERP_WIDE",
+            "FLAPPY_MMP_OS_SAND_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_SAND_USDT_PERP_THIN",
+            "FLAPPY_MMP_OS_OMG_USDT_PERP_THIN",
+            "FLAPPY_MMP_OS_OMG_USDT_PERP_WIDE",
+            "FLAPPY_OS_XRP_USD_PERP",
+            "FLAPPY_MMP_OS_ZEC_USDT_PERP_WIDE"
+
+        ],
+
+        "public_ip": "8.218.40.187"
+    },
+    {
+       "name": "os-prod-4",
+
+       "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 3,
+            "accounts": [
+                {
+                    "account_id": "sub_9",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub_10",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub_42",
+                    "exchange": "okex_v5_swap"
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_MMP_OS_CSPR_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_ENS_USDT_PERP_WIDE",
+            "FLAPPY_OS_EGLD_USDT_PERP",
+            "FLAPPY_MMP_OS_EGLD_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_EGLD_USDT_PERP_THIN",
+            "FLAPPY_OS_MATIC_USDT_PERP",
+            "FLAPPY_MMP_OS_MATIC_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_ICP_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_SHIB_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_PEOPLE_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_SLP_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_YGG_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_APE_USDT_PERP_THIN",
+            "FLAPPY_MMP_OS_APE_USDT_PERP_WIDE",
+            "IG11_MMP_OS_APE_USDT_PERP_THIN",
+            "FLAPPY_MMP_OS_MINA_USDT_PERP_THIN",
+            "FLAPPY_MMP_OS_MINA_USDT_PERP_WIDE"
+        ],
+        "public_ip": "8.217.4.119"
+    },
+    {
+       "name": "os-prod-5",
+
+       "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 3,
+            "accounts": [
+                {
+                    "account_id": "sub_9",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub_10",
+                    "exchange": "okex_v5_swap"
+                }
+
+            ]
+        },
+        "runners": [
+            "FLAPPY_OS_AAVE_USDT_PERP",
+            "FLAPPY_MMP_OS_AAVE_USDT_PERP_WIDE",
+            "FLAPPY_OS_CRO_USDT_PERP",
+            "FLAPPY_MMP_OS_CRO_USDT_PERP_WIDE",
+            "FLAPPY_OS_FIL_USDT_PERP",
+            "FLAPPY_OS_FIL_USD_PERP",
+            "FLAPPY_OS_MANA_USDT_PERP",
+            "FLAPPY_OS_MANA_USD_PERP",
+            "FLAPPY_MMP_OS_MANA_USDT_PERP_THIN",
+            "FLAPPY_MMP_OS_NEAR_USDT_PERP_WIDE"
+        ],
+
+        "public_ip": "8.218.6.190"
+    },
+    {
+       "name": "os-prod-6",
+
+       "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 3,
+            "accounts": [
+                {
+                    "account_id": "sub_9",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub_10",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub_42",
+                    "exchange": "okex_v5_swap"
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_MMP_OS_LINK_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_LINK_USD_PERP_WIDE",
+            "FLAPPY_OS_KSM_USDT_PERP",
+            "FLAPPY_MMP_OS_KSM_USDT_PERP_WIDE",
+            "FLAPPY_OS_LRC_USDT_PERP",
+            "FLAPPY_MMP_OS_LRC_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_UNI_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_SUSHI_USDT_PERP_WIDE",
+            "FLAPPY_OS_OP_USDT_PERP",
+            "FLAPPY_MMP_OS_OP_USDT_PERP_THIN",
+            "FLAPPY_MMP_OS_OP_USDT_PERP_WIDE",
+            "IG11_MMP_OS_OP_USDT_PERP_THIN",
+            "IG11_MMP_OS_OP_USDT_PERP_WIDE"
+        ],
+        "public_ip": "47.243.233.147"
+    },
+    {
+       "name": "osp-prod-1",
+
+       "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": null,
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "hongkong",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 3,
+            "accounts": [
+                {
+                    "account_id": "sub_43",
+                    "exchange": "okex_v5"
+                }
+            ]
+        },
+        "runners": [
+            "IG11_OSP_ETH_USDT",
+            "IG11_OSP_BTC_USDT"
+
+        ],
+        "public_ip": "47.243.172.13"
+    },
+    {
+        "name": "ftx-prod-1",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 6,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub31",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub32",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub33",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub34",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub35",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub36",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub37",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub38",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub39",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub40",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub41",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub42",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub43",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub44",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub45",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub46",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub47",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub48",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub49",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub50",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub51",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub52",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub53",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub54",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub55",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub56",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub57",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub58",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub59",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub60",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub61",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub62",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub63",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub64",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub65",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub66",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub67",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub68",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub69",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub70",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub71",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub72",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub73",
+                    "exchange": "ftx_futures"
+                }
+            ],
+            "rate_limit_common": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 400
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 80
+                }
+            },
+            "rate_limit_per_symbols": [
+                {
+                    "symbol": "BTC_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                },
+                {
+                    "symbol": "ETH_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                }
+            ],
+            "default_rate_limit_per_symbol": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 50
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 12
+                }
+            }
+        },
+        "runners": [
+            "FLAPPY_MMP_FTX_ADA_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_AXS_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_BNB_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_BCH_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_DOGE_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_ETH_USD_CQ_THIN",
+            "FLAPPY_MMP_FTX_ETH_USD_NQ_THIN",
+            "FLAPPY_MMP_FTX_ETH_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_LINK_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_SOL_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_MATIC_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_FTT_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_SOL_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_FTT_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_MATIC_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_ADA_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_AXS_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_BNB_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_DOGE_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_DOT_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_ETH_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_LINK_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_SAND_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_SAND_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_MANA_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_MANA_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_LRC_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_LRC_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_SHIB_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_SHIB_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_OMG_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_OMG_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_BTC_USD_CQ_WIDE",
+            "FLAPPY_MMP_FTX_BTC_USD_NQ_WIDE",
+            "FLAPPY_MMP_FTX_ETH_USD_CQ_WIDE",
+            "FLAPPY_MMP_FTX_VET_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_VET_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_CHZ_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_CHZ_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_GALA_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_GALA_USD_PERP_WIDE",
+            "IG11_PMMP_FTX_APE_USD_PERP",
+            "IG11_FTX_GMT_USD_PERP"
+        ],
+        "public_ip": "18.176.41.116"
+    },
+    {
+        "name": "ftx-prod-2",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 6,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub74",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub75",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub76",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub77",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub78",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub79",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub80",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub81",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub82",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub83",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub84",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub85",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub86",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub87",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub88",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub89",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub90",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub91",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub92",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub93",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub94",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub95",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub96",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub97",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub98",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub99",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub100",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub101",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub102",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub103",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub104",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub105",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub106",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub107",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub108",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub109",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub110",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub111",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub112",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub113",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub114",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub115",
+                    "exchange": "ftx_futures"
+                }
+            ],
+            "rate_limit_common": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 400
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 80
+                }
+            },
+            "rate_limit_per_symbols": [
+                {
+                    "symbol": "BTC_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                },
+                {
+                    "symbol": "ETH_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                }
+            ],
+            "default_rate_limit_per_symbol": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 50
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 12
+                }
+            }
+        },
+        "runners": [
+            "FLAPPY_MMP_FTX_BTC_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_BTC_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_XRP_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_XRP_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_ALGO_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_ALGO_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_DYDX_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_LTC_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_LTC_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_AVAX_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_AVAX_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_FTM_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_FTM_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_SUSHI_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_SUSHI_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_SRM_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_SRM_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_RAY_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_RAY_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_ATOM_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_ATOM_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_XTZ_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_XTZ_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_BTC_USD_CQ_THIN",
+            "FLAPPY_MMP_FTX_BTC_USD_NQ_THIN",
+            "FLAPPY_MMP_FTX_THETA_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_THETA_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_OMG_USD_CQ_WIDE",
+            "FLAPPY_MMP_FTX_NEAR_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_OMG_USD_CQ_THIN",
+            "FLAPPY_MMP_FTX_CRO_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_CRO_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_SLP_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_FIL_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_FIL_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_CRV_USD_PERP_THIN",
+            "FLAPPY_MMP_FTX_CRV_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_ETH_USD_NQ_WIDE",
+            "FLAPPY_MMP_FTX_BCH_USD_PERP_WIDE",
+            "FLAPPY_MMP_FTX_DOT_USD_PERP_THIN"
+        ],
+        "public_ip": "35.75.163.151"
+    },
+    {
+        "name": "ig11-prod-1",
+        "ip": {
+            "172.31.38.138": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "fapi6"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi6"
+                }
+            ],
+            "172.31.34.103": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ],
+            "172.31.44.68": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 16,
+        "gateway_cores": 11,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub_11",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_12",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_19",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub1",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub2",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub3",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub4",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub5",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub6",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub7",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub9",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub10",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub11",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub12",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_futures",
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    },
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2090
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_futures",
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    },
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2090
+                    }
+                },
+                {
+                    "account_id": "sub10",
+                    "exchange": "binance_futures",
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    },
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2090
+                    }
+                },
+                {
+                    "account_id": "sub11",
+                    "exchange": "binance_futures",
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    },
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2090
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2390
+                    }
+                },
+                {
+                    "account_id": "sub14",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5980
+                    }
+                }
+            ],
+            "rate_limit_common": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 400
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 80
+                }
+            },
+            "rate_limit_per_symbols": [
+                {
+                    "symbol": "BTC_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                },
+                {
+                    "symbol": "ETH_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                }
+            ],
+            "default_rate_limit_per_symbol": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 50
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 12
+                }
+            }
+        },
+        "runners": [
+            "IG11_ALL_TARGETS_ETH",
+            "IG11_ALL_TARGETS_ETH_WIDE",
+            "IG11_ALL_TARGETS_BTC",
+            "IG11_ALL_TARGETS_BTC_WIDE"
+        ],
+        "public_ip": "13.115.234.157"
+    },
+    {
+        "name": "ig11-prod-2",
+        "ip": {
+            "172.31.45.78": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "fapi3"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "dapi3"
+                }
+            ],
+            "172.31.37.136": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "fapi7"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "dapi7"
+                }
+            ],
+            "172.31.41.63": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub_11",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_12",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_19",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub13",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub14",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub15",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub16",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub17",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub18",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub19",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_futures",
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    },
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2290
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_futures",
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    },
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2290
+                    }
+                },
+                {
+                    "account_id": "sub10",
+                    "exchange": "binance_futures",
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    },
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1490
+                    }
+                },
+                {
+                    "account_id": "sub11",
+                    "exchange": "binance_futures",
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    },
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2290
+                    }
+                },
+                {
+                    "account_id": "sub2",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 5980
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    }
+                }
+            ],
+            "rate_limit_common": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 400
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 80
+                }
+            },
+            "rate_limit_per_symbols": [
+                {
+                    "symbol": "BTC_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                },
+                {
+                    "symbol": "ETH_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                }
+            ],
+            "default_rate_limit_per_symbol": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 50
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 12
+                }
+            }
+        },
+        "runners": [],
+        "public_ip": "54.168.158.193"
+    },
+    {
+        "name": "ig11-prod-3",
+        "ip": {
+            "172.31.44.66": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 12000
+                    },
+                    "used_api": "fapi3"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "dapi3"
+                }
+            ],
+            "172.31.38.3": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ],
+            "172.31.38.64": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub_11",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_12",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_19",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub20",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub21",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub22",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub23",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub24",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub25",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2290
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2290
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub10",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1490
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub11",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 2290
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 3580
+                    }
+                }
+            ],
+            "rate_limit_common": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 400
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 80
+                }
+            },
+            "rate_limit_per_symbols": [
+                {
+                    "symbol": "BTC_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                },
+                {
+                    "symbol": "ETH_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                }
+            ],
+            "default_rate_limit_per_symbol": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 50
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 12
+                }
+            }
+        },
+        "runners": [],
+        "public_ip": "54.238.67.155"
+    },
+    {
+        "name": "ig11-prod-4",
+        "ip": {
+            "172.31.43.68": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ],
+            "172.31.39.92": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ],
+            "172.31.35.30": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 4,
+        "gateway_cores": 2,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub26",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub27",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub_19",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub10",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 295
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub11",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub16",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                },
+                {
+                    "account_id": "sub17",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                },
+                {
+                    "account_id": "sub22",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                }
+            ],
+            "rate_limit_common": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 400
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 80
+                }
+            },
+            "rate_limit_per_symbols": [
+                {
+                    "symbol": "BTC_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                },
+                {
+                    "symbol": "ETH_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                }
+            ],
+            "default_rate_limit_per_symbol": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 50
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 12
+                }
+            }
+        },
+        "runners": [
+            "IG11_ALL_TARGETS_BNB"
+        ],
+        "public_ip": "35.76.208.50"
+    },
+    {
+        "name": "ig11-prod-5",
+        "ip": {
+            "172.31.33.1": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ],
+            "172.31.41.167": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ],
+            "172.31.40.67": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 5,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub_11",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_12",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_19",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub28",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub29",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub10",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 295
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub11",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub18",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                },
+                {
+                    "account_id": "sub19",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                },
+                {
+                    "account_id": "sub23",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                }
+            ],
+            "rate_limit_common": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 400
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 80
+                }
+            },
+            "rate_limit_per_symbols": [
+                {
+                    "symbol": "BTC_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                },
+                {
+                    "symbol": "ETH_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                }
+            ],
+            "default_rate_limit_per_symbol": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 50
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 12
+                }
+            }
+        },
+        "runners": [],
+        "public_ip": "13.112.60.97"
+    },
+    {
+        "name": "ig11-prod-6",
+        "ip": {
+            "172.31.45.62": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ],
+            "172.31.36.145": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ],
+            "172.31.43.120": [
+                {
+                    "exchange": "binance_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                },
+                {
+                    "exchange": "binance_coin_futures",
+                    "rate_limit": {
+                        "interval": 60000000,
+                        "limit": 2400
+                    },
+                    "used_api": "default"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 5,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": true,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub_11",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_12",
+                    "exchange": "okex_v5_futures"
+                },
+                {
+                    "account_id": "sub_19",
+                    "exchange": "okex_v5_swap"
+                },
+                {
+                    "account_id": "sub30",
+                    "exchange": "ftx_futures"
+                },
+                {
+                    "account_id": "sub7",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub8",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub10",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 295
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub11",
+                    "exchange": "binance_futures",
+                    "orders_rate_limit_1min": {
+                        "interval": 60000000,
+                        "limit": 1090
+                    },
+                    "orders_fill_rate_limit": {
+                        "interval": 600000000,
+                        "limit": 9900
+                    }
+                },
+                {
+                    "account_id": "sub20",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                },
+                {
+                    "account_id": "sub21",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                },
+                {
+                    "account_id": "sub24",
+                    "exchange": "binance_coin_futures",
+                    "orders_rate_limit": {
+                        "interval": 60000000,
+                        "limit": 1190
+                    }
+                }
+            ],
+            "rate_limit_common": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 400
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 80
+                }
+            },
+            "rate_limit_per_symbols": [
+                {
+                    "symbol": "BTC_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                },
+                {
+                    "symbol": "ETH_USD_PERP",
+                    "order_rl_1s": {
+                        "interval": 1000000,
+                        "limit": 100
+                    },
+                    "order_rl_200ms": {
+                        "interval": 200000,
+                        "limit": 24
+                    }
+                }
+            ],
+            "default_rate_limit_per_symbol": {
+                "order_rl_1s": {
+                    "interval": 1000000,
+                    "limit": 50
+                },
+                "order_rl_200ms": {
+                    "interval": 200000,
+                    "limit": 12
+                }
+            }
+        },
+        "runners": [],
+        "public_ip": "35.76.194.113"
+    },
+    {
+        "name": "dydx-prod-1",
+        "ip": {
+            "localhost": [
+                {
+                    "exchange": "dydx_futures",
+                    "rate_limit": null,
+                    "used_api": "general"
+                }
+            ]
+        },
+        "cores": 8,
+        "gateway_cores": 3,
+        "location": "tokyo",
+        "db_type": "production",
+        "gateway": {
+            "type": "local",
+            "save_only_order_log": false,
+            "multiplexer_factor": 5,
+            "accounts": [
+                {
+                    "account_id": "sub1",
+                    "exchange": "dydx_futures"
+                }
+            ]
+        },
+        "runners": [
+            "FLAPPY_MMP_DYDX_BTC_USDC_PERP_THIN",
+            "FLAPPY_MMP_DYDX_ETH_USDC_PERP_THIN"
+        ],
+        "public_ip": "35.76.239.93"
+    }
+]

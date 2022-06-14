@@ -4,7 +4,7 @@ import os
 from pprint import pprint
 
 project_path = os.path.abspath('../').replace("\\", '/')
-path_to_robots = project_path + '/base_trading_configs/robots/'   #path to robots
+path_to_robots = project_path + '/base_trading_configs/robots/ig11'   #path to robots
 
 
 path_to_model = []
@@ -51,10 +51,10 @@ for path in path_to_model:
 
         cfg["model"]["instruments"] = instruments
 
-        with open(path, 'w') as f:
-            json.dump(cfg, f, indent=2)
+        # with open(path, 'w') as f:
+        #     json.dump(cfg, f, indent=2)
 
-    elif "ig11" in path:
+    elif "ig11_os_sol_usd_perp.json" in path:
         with open(path) as infile:
             cfg = json.load(infile)
 

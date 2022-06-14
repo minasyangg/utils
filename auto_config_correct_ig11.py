@@ -4,7 +4,7 @@ import os
 from pprint import pprint
 
 project_path = os.path.abspath('../').replace("\\", '/')
-path_to_robots = project_path + '/base_trading_configs/robots/'   #path to robots
+path_to_robots = project_path + '/base_trading_configs/robots/flappy/okex_v5_futures'   #path to robots
 path_to_hosts = project_path + '/base_trading_configs/hosts/hosts.json'
 
 
@@ -65,11 +65,11 @@ def fix_fee(path_to_models):
             if '_USD_' in smb:
                 fee = {}
                 fee["symbol"] = smb
-                fee["taker"] = {"asset": smb.split('_')[0], "percent": 0.02}
-                fee["maker"] = {"asset": smb.split('_')[0], "percent": -0.01}
+                fee["maker_percent"] = -0.01
+                fee["taker_percent"] = 0.02
                 fee_configs.append(fee)
     print(len(fee_configs))
-    with open('crypto_futures.json', 'w') as f:
+    with open('temp_files/fee_crypto_swap.json', 'w') as f:
         json.dump(fee_configs, f, indent=2)
 
-fix_indicatators(path_to_model, 'os-prod-2')
+fix_fee(path_to_model)

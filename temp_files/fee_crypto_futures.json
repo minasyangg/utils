@@ -1,0 +1,2017 @@
+[
+  {
+    "symbol": "AAVE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AAVE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AAVE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ATOM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ATOM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ATOM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOGE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOGE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOGE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EGLD_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EGLD_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EGLD_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "GALA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "GALA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "GALA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "GALA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "GALA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LUNA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LUNA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LUNA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LUNA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LUNA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MATIC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MATIC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MATIC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MATIC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "NEAR_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "NEAR_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "NEAR_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "THETA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "THETA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "THETA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "TRX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "TRX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "TRX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "UNI_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "UNI_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "UNI_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XLM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XLM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XLM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ALGO_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ALGO_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ALGO_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ATOM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ATOM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AXS_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AXS_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AXS_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BNB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "CHZ_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "CHZ_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "CRO_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "CRO_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "CRO_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "CRV_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "CRV_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOGE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOGE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOGE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DYDX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DYDX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DYDX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FTT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "GALA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "GALA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "GALA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ICP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LRC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LRC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LRC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LUNA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LUNA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LUNA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MATIC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MATIC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MATIC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "NEAR_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "NEAR_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "OMG_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "OMG_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "OMG_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "OMG_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "OMG_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "OMG_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "RAY_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "RAY_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "RAY_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "RUNE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SHIB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SHIB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SHIB_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SLP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SRM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SRM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SRM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SUSHI_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SUSHI_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SUSHI_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "THETA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "THETA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "THETA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "VET_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "VET_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XTZ_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XTZ_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BSV_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BSV_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BSV_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BSV_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "TRX_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "TRX_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "TRX_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "TRX_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_CQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_CW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_NQ",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_NW",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ADA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ALGO_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ATOM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "AVAX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BCH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BSV_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "BTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "CRV_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DASH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOGE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOGE_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "DOT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "EOS_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ETH_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "FIL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "IOST_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "KNC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LINK_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "LTC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "MANA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "NEO_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ONT_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "QTUM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "QTUM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SAND_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SOL_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "SUN_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "THETA_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "TRX_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XLM_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XMR_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XRP_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "XTZ_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "YFII_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "YFI_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  },
+  {
+    "symbol": "ZEC_USD_PERP",
+    "maker_percent": -0.01,
+    "taker_percent": 0.02
+  }
+]
