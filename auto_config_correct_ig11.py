@@ -69,7 +69,7 @@ def fix_fee(path_to_models):
                 fee["taker_percent"] = 0.02
                 fee_configs.append(fee)
     print(len(fee_configs))
-    with open('temp_files/fee_crypto_swap.json', 'w') as f:
+    with open('temp_files/fee_crypto_futures.json', 'w') as f:
         json.dump(fee_configs, f, indent=2)
 
 fix_fee(path_to_model)
