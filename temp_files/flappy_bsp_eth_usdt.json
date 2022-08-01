@@ -1,0 +1,198 @@
+{
+  "model": {
+    "sources": [
+      {
+        "exchange": "binance_futures",
+        "symbol": "ETH_USDT_PERP",
+        "aggr": "100000 USDT",
+        "return_window_us": 100000,
+        "return_coef": 2.0,
+        "return_filter_th": 1e-06,
+        "attract_time_us": 50000,
+        "attract_coef": 0.25,
+        "use_instrument": true
+      },
+      {
+        "exchange": "okex_v5_swap",
+        "symbol": "ETH_USDT_PERP",
+        "aggr": "100000 USDT",
+        "return_window_us": 100000,
+        "return_coef": 2.0,
+        "return_filter_th": 1e-06,
+        "attract_time_us": 50000,
+        "attract_coef": 0.25,
+        "use_instrument": true
+      },
+      {
+        "exchange": "binance_coin_futures",
+        "symbol": "ETH_USD_PERP",
+        "aggr": "100000 USDT",
+        "return_window_us": 100000,
+        "return_coef": 2.0,
+        "return_filter_th": 1e-06,
+        "attract_time_us": 50000,
+        "attract_coef": 0.25,
+        "use_instrument": true
+      },
+      {
+        "exchange": "ftx_futures",
+        "symbol": "ETH_USD_PERP",
+        "aggr": "100000 USDT",
+        "return_window_us": 100000,
+        "return_coef": 2.0,
+        "return_filter_th": 1e-06,
+        "attract_time_us": 50000,
+        "attract_coef": 0.25,
+        "use_instrument": true
+      }
+    ],
+    "target": {
+      "exchange": "binance",
+      "symbol": "ETH_USDT",
+      "aggr": "100000 USDT",
+      "shift_percent": 0.04
+    },
+    "accounts": [
+      "sub1"
+    ],
+    "depth_size": 200,
+    "debug_calculation": false,
+    "default_async": true,
+    "max_base_pos": 0.025,
+    "level_size": 0.025,
+    "min_level_size": 0.001,
+    "close_position_shift_step": 0,
+    "close_position_constant_shift_th": 0.001,
+    "open_position_shift_step_percent": 0,
+    "close_position_shift_percent": 0,
+    "enable_async_closing": false,
+    "wall_filter_base": 0.001,
+    "stick_to_next_order": true,
+    "bound_config": {
+      "open_front_bound_percent": null,
+      "open_back_bound_percent": null
+    },
+    "volume_th_base": 0.001,
+    "indicators": {
+      "clickhouse": {
+        "enable": false,
+        "black_list": [],
+        "white_list": []
+      }
+    },
+    "metrics": {
+      "prometheus": {
+        "enable": true,
+        "black_list": [],
+        "white_list": []
+      },
+      "clickhouse": {
+        "enable": false,
+        "black_list": [],
+        "white_list": []
+      }
+    },
+    "expiration_period_us": 10000000,
+    "move_threshold_config": {
+      "default": "0.015%",
+      "close": "0.01%"
+    },
+    "allow_min_permutations": true,
+    "asset_converter": {
+      "update_step_us": 1000000,
+      "default_exchanges": [
+        "binance",
+        "okex_v5",
+        "huobi_global"
+      ],
+      "constant_rates": [
+        {
+          "from": "CTR_O5SW_ETH_USDT_PERP_R",
+          "to": "ETH",
+          "rate": 0.1
+        },
+        {
+          "from": "CTR_O5SW_ETH_USD_PERP_I",
+          "to": "USDT",
+          "rate": 10
+        },
+        {
+          "from": "CTR_FTXF_ETH_USD_PERP_R",
+          "to": "ETH",
+          "rate": 1
+        },
+        {
+          "from": "USDT",
+          "to": "USD",
+          "rate": 1
+        },
+        {
+          "from": "BUSD",
+          "to": "USDT",
+          "rate": 1
+        },
+        {
+          "from": "USDT",
+          "to": "BUSD",
+          "rate": 1
+        },
+        {
+          "from": "USDT",
+          "to": "USDC",
+          "rate": 1
+        }
+      ]
+    },
+    "indicate_step_us": 0,
+    "instruments": [
+      {
+        "exchange": "binance_futures",
+        "symbol": "ETH_USDT_PERP",
+        "depth_stream": true,
+        "trade_stream": true,
+        "can_trade": false,
+        "depth_size": 200
+      },
+      {
+        "exchange": "okex_v5_swap",
+        "symbol": "ETH_USDT_PERP",
+        "depth_stream": true,
+        "trade_stream": true,
+        "can_trade": false,
+        "depth_size": 200
+      },
+      {
+        "exchange": "binance_coin_futures",
+        "symbol": "ETH_USD_PERP",
+        "depth_stream": true,
+        "trade_stream": true,
+        "can_trade": false,
+        "depth_size": 200
+      },
+      {
+        "exchange": "ftx_futures",
+        "symbol": "ETH_USD_PERP",
+        "depth_stream": true,
+        "trade_stream": true,
+        "can_trade": false,
+        "depth_size": 200
+      },
+      {
+        "exchange": "binance",
+        "symbol": "ETH_USDT",
+        "depth_stream": true,
+        "trade_stream": true,
+        "can_trade": true,
+        "depth_size": 200,
+        "accounts": [
+          "sub1"
+        ]
+      }
+    ]
+  },
+  "type": "flappy",
+  "model_id": "FLAPPY_BSP_ETH_USDT",
+  "indicator": {
+    "ch_db_type": "test"
+  }
+}
