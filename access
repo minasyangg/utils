@@ -1,0 +1,218 @@
+--- Info ---
+
+
+--- GENERATORS ---
+Old version (data+generator)
+https://gitlab.com/fftrading/configs/base_trading_configs/-/tree/prod
+https://gitlab.com/fftrading/configs/trading_configs_generator
+
+New version (data+generator)
+https://gitlab.com/fftrading/configs/base_trading_configs/-/tree/test-new-format/
+https://gitlab.com/fftrading/configs/trading_configs_generator/-/tree/nikita/hist-gateways-generation/
+
+--- Python ---
+PYTHONPATH=${PWD}
+--- Git---
+git branch
+git checkout dev
+git branch --show-current
+Такс, чтобы запустить процесс в скрине, запускай
+screen -dmS jupyter jupyter notebook
+screen -x 	Чтобы в него подключиться
+kill PID - убить процесс
+
+Чтобы его свернуть обратно, нажимай Ctrl-A Ctrl-D
+
+
+
+---Clickhouse---
+
+ cache_dir='/data/books_cache_v777'   - path for Bookmap vis
+clickhouse-client
+
+select * from okex_v5_swap_prod.uOrderLogEvents where date = '2021-10-06' and orderLogEventType = 'EXECUTION' limit 10
+select * from okex_v5_swap_prod.uOrderLogEvents where date = '2021-10-06' limit 10
+show tables from {db}
+
+select * from (select * from okex_v5_swap_prod.uOrderLogEvents where date = "2021-10-20" and orderLogEventType = "EXECUTION" and modelId = "FLAPPY_OS_ATOM_USDT_PERP" ORDER BY exchangeTime DESC limit 10) sub ORDER BY exchangeTime ASC
+select source from common_prod.indicators where date = '2021-10-21' group by source order by source
+
+select* from common_test.indicators limit 10
+select name,  count(name)  from common_test.indicators where source = 'X0TT8P' and name like '%model_update_price%' group by name
+
+select argMax(toDateTime(eventTime / 1000000), eventTime) as running_time from common_test.indicators where source = 'A9S7Q0' and eventTime > 0
+select MAX(exchageTime)from binance_futures.uDepthUpdates where symbol = 'BTC_USDT_PERP' and date = '2021-11-12' limit 10
+select orderCid, count(distinct price) as cnt from  okex_v5_swap_prod.uOrderLogEvents where symbol = 'SOL_USDT_PERP' and date = '2021-11-23' and price > 0  group by orderCid having cnt > 2 limit 10
+
+select orderCid, num from(select distinct(orderCid), count(*) as num from okex_v5_swap_prod.uOrderLogEvents where modelId= 'FLAPPY_OS_ETH_USDT_PERP_TEST' and  eventTime > 1639257480000000 and eventTime < 1639261200000000 group by orderCid) where num = '2'
+with toUnixTimestamp('2022-01-13 19:25:00')*10e5 as start, toUnixTimestamp('2022-01-14 09:10:00')*10e5 as end, eventTime as ev select * from okex_v5_swap_prod.uOrderLogEvents where modelId = 'IG11_HK_ANT' and  ev > start and ev < end limit 10
+select distinct(symbol) from okex_v5_swap_prod.uRequestLog where date = today() and accountId = 'sub_9'  and httpError = 'OrderPlacementFailedInsufficientBalance' - минимум лимита по роботам
+with toUnixTimestamp('2022-07-27 17:45:00')*10e5 as start, toUnixTimestamp('2022-07-27 18:15:00')*10e5 as end, eventTime as  time   select distinct(orderLogEventType), count(*) from okex_v5_swap_backtest.uOrderLogEvents where time > start and time < end  and modelId = 'L4PHCL' group by orderLogEventType
+with toUnixTimestamp('2022-07-27 17:45:00')*10e5 as start, toUnixTimestamp('2022-07-27 18:15:00')*10e5 as end, eventTime as  time   select distinct(orderLogEventType), count(*) from okex_v5_swap_prod.uOrderLogEvents where time > start and time < end  and modelId = 'IG11_OS_ETH_USDT_PERP' group by orderLogEventType
+
+select distinct(name) from common_prod.indicators where source= 'IG11_OS_ETH_USDT_PERP' group by name order by name into outfile '/home/gminasyan/clickhouse_query/eth.txt'  - запись в файл
+
+optimize table common_backtest_buffer.indicators
+
+depthUpdates - старое
+markPriceEvents - старое
+snapshots - старое
+tradesUpdates - старое
+uBboEvents - некоторые биржи предоставляют стрим с изменением лучших цен с объемами бидов и асков. Вот это туда пишется. Но лучше использовать uDepthUpdates - там более полная информация.
+uDepthUpdates - Это стрим с изменением уровней цен в ордербуках. Это одна из главных таблиц с маркетдатой.
+uTradesUpdates - Это стрим анонимных сделок.  Это тоже одна из главных таблиц с маркетдатой.
+uMarkPriceEvents - там вообще чето есть? Если и есть, то там вот это https://www.binance.com/en/support/faq/360033525071
+uOrderCancelRejects - События, когда мы не можем отменить ордер. Лучше уточнить у Ильи.
+uOrderExecutionReports - это можно спросчить у Ильи или Дани (который в нашей комнате)
+uOrderLogEvents - ордерлог. Тут практически все, что нам нужно для понимания того, какие ордера и когда мы ставили. Какие были на ним сделки итд.
+uOrderPlaceRejects - События, когда мы не можем поставить ордер. Лучше уточнить у Ильи.
+return_with_offset -> TARGET_WEIGHT_MODEL_INNER->  TARGET_WEIGHT_MODEL|RETURN_WITH_OFFSET|AGGR_MID ->  TARGET_WEIGHT_MODEL|RETURN_WITH_OFFSET|AGGR_MID*ADJUSTED_PRICE
+
+---Bookmap---
+https://disk.yandex.ru/d/mz3QdDn4WHKHSw
+key: D5W5-5Y6D-Z42R-TTP0-OEUW-Z3L2-3ASS
+
+Notions:
+В BookMap ссылка на разделе не работает.
+
+---GIT---
+git pull origin prod_new_generator
+git push origin prod_new_generator
+git checkout --track -b dev origin/dev
+$ git reset --hard коммит
+git reset HEAD^ -> git status -> git fetch --all -> git pull -> git stash pop -> git add
+
+---Server--
+ssh frodos@47.243.199.141 - зайти на сервер os-prod-1
+ssh frodos@8.218.9.242 - зайти на сервер os-prod-2
+ssh frodos@8.218.40.187 - зайти на сервер os-prod-3
+ssh frodos@8.217.4.119 - зайти на сервер os-prod-4
+ssh frodos@8.218.6.190 - зайти на сервер os-prod-5
+ssh frodos@47.243.233.147 - зайти на сервер os-prod-6
+
+sudo systemctl stop flappy_of_ada_usd_cq - stop робота
+sudo systemctl restart ig11_os_eth_usdt_perp restart робота
+sudo systemctl start ig11_os_people_usdt_perp  - запустить робота
+sudo systemctl status ig11_os_people_usdt_perp  - статус робота
+sudo nano /etc/quotopus/ig11_os_eth_usdt_perp/robot.json - редактирование конфига  cntr+o (сохранить)
+etc -> quotopus -> robot_name_dir - > config.json
+
+---Bookmap---
+1)tmux a -t 5
+2_cntrl+c
+3)стрелка вверх (выбор последней команды) -> enter
+4)чтобы выйти cntrl+b+d
+---Grafana Test---
+login: admin
+parol: passowrd
+GIT
+
+---Terminal---
+ls -lh /var/log/quotopus/flappy_bf_xrp_busd_perp/flappy_bf_xrp_busd_perp_2021-12-29.log
+cat /var/log/quotopus/ig11_os_ape_usdt_perp_bt/ig11_os_ape_usdt_perp_bt_2022-06-12.log | grep "log level" -A 10 -B 10  для  reload
+tail -n 10000 /var/log/quotopus/ig11_os_sol_usdt_perp/ig11_os_sol_usdt_perp_2022-06-18.log  - в случае ошибки последние 100 строк
+sudo systemctl status exchange_info_storage - чекнуть инфосторадж
+sudo systemctl —type=service | grep exchange - чекнуть гейтвей
+sudo systemctl restart exchange_gateway_proxy   -
+pip install --target=/path/to/install package_name --user  - install package to dolfer_name
+rm -rf .local/share/Trash/files/* - почитсить файлы
+
+
+---Promethey---
+ssh -L 9090:localhost:9090 ubuntu@3.69.180.249   - прокидка порта из Reserach
+ssh -i C:/Users/minas/Documents/.ssh/id_rsa.pub -L 9090:localhost:9090 ubuntu@3.69.180.249 - прокидка из пайчарм promethey
+ssh -i C:/Users/minas/Documents/.ssh_putty/id_rsa.key.ppk -L 8889:localhost:8889 ubuntu@37.230.249.14 - прокидка из пайчарм promethey
+
+curl -g 'http://127.0.0.1:9090/api/v1/query?query=g_transfer_latency_us{model_name="FLAPPY_BCF_EOS_USD_PERP"}' | jq    - запрос по конкретной модели.
+
+
+
+      // При рядовом запуске не требуется вообще иметь ничего в индикаторах робота. Включать данную секцию и конфигурировать ее стоит после консультации со мной либо с Митяем
+      "indicators": {
+        "clickhouse": {
+          "enable": false,
+          "black_list": [],
+          "white_list": []
+        }
+      },
+
+      // При рядовом запуске требуется иметь от модели только метрику пнл. Включать доп метрики стоит после явного понимания того, что конкретно хочется посмотреть дополнительно
+      "metrics": {
+        "prometheus": {
+          "enable": false,
+          "black_list": [],
+          "white_list": []
+        },
+        "clickhouse": {
+          "enable": true,
+          "black_list": [".*"],
+          "white_list": ["model_pnl.*"]
+        }
+      },
+
+
+---Pycharm---
+ pip install --upgrade ccxt
+---Reserach---
+37.230.249.14
+clickhouse-client -h 10.10.15.14
+
+---Reserach_old---
+91.218.251.230
+port 8890
+---Grafana_test---
+port: 3001
+localhost
+3000
+35.75.243.214
+ubuntu
+22
+
+
+            "IG11_OSP_BTC_USDT",
+            "IG11_OSP_ETH_USDT",
+            "IG11_OSP_FTM_USDT",
+            "IG11_OSP_GALA_USDT",
+            "IG11_OSP_JST_USDT",
+            "IG11_OSP_LUNA_USDT",
+            "IG11_OSP_OKB_USDT",
+            "IG11_OSP_SOL_USDT",
+            "IG11_OSP_TRX_USDT",
+            "IG11_OSP_DOGE_USDT",
+            "IG11_OSP_NEAR_USDT",
+            "IG11_OSP_WAVES_USDT",
+            "IG11_OSP_ATOM_USDT",
+            "IG11_OSP_AVAX_USDT"
+
+
+os-prod-1
+
+            "FLAPPY_OS_AVAX_USDT_PERP",
+            "FLAPPY_OS_AVAX_USD_PERP",
+            "IG11_OS_ATOM_USDT_PERP",
+            "IG11_MMP_OS_ATOM_USDT_PERP_THIN",
+            "IG11_OS_ALGO_USDT_PERP",
+            "FLAPPY_MMP_OS_ALGO_USDT_PERP_WIDE",
+            "FLAPPY_OS_ADA_USDT_PERP",
+            "IG11_OS_AXS_USDT_PERP",
+            "IG11_OS_BCH_USDT_PERP",
+            "IG11_MMP_OS_BCH_USDT_PERP_THIN",
+            "IG11_OS_BCH_USD_PERP",
+            "FLAPPY_OS_ETH_USDT_PERP",
+            "FLAPPY_MMP_OS_ETH_USDT_PERP_WIDE",
+            "FLAPPY_OS_ETH_USD_PERP",
+            "FLAPPY_MMP_OS_ETH_USD_PERP_WIDE",
+            "IG11_OS_ETH_USDT_PERP",
+            "IG11_OS_ETH_USD_PERP",
+            "FLAPPY_OS_EOS_USDT_PERP",
+            "IG11_OS_EOS_USD_PERP",
+            "FLAPPY_OS_GALA_USDT_PERP",
+            "FLAPPY_MMP_OS_GALA_USDT_PERP_WIDE",
+            "FLAPPY_MMP_OS_GALA_USDT_PERP_THIN",
+            "FLAPPY_OS_NEO_USDT_PERP",
+            "IG11_OS_GMT_USDT_PERP",
+            "IG11_MMP_OS_GMT_USDT_PERP_THIN"
+
+
+--- BT ---
+http://localhost:3001/d/rcVsf4C7z/simulator-monitoring?orgId=1&refresh=5s -

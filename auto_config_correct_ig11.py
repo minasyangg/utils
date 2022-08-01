@@ -4,7 +4,7 @@ import os
 from pprint import pprint
 
 project_path = os.path.abspath('../').replace("\\", '/')
-path_to_robots = project_path + '/base_trading_configs/robots/flappy/okex_v5_futures'   #path to robots
+path_to_robots = project_path + '/base_trading_configs/robots'   #path to robots
 path_to_hosts = project_path + '/base_trading_configs/hosts/hosts.json'
 
 
@@ -34,7 +34,7 @@ def fix_indicatators(path_to_model, host_name):
                 model_id = cfg["model_id"]
                 if model_id in model_list:
                     if 'MMP' not in model_id:
-                        cfg['model']['indicators']['clickhouse']['enable'] = True
+                        cfg['model']['indicators']['clickhouse']['enable'] = False
                         cfg['model']['indicators']['clickhouse']['black_list'] = []
                         cfg['model']['indicators']['clickhouse']['white_list'] = []
                         with open(path, 'w') as f:
@@ -44,7 +44,7 @@ def fix_indicatators(path_to_model, host_name):
                 model_id = cfg["model_id"]
                 if model_id in model_list:
                     if 'MMP' not in model_id:
-                        cfg['model']['indicators']['clickhouse']['enable'] = True
+                        cfg['model']['indicators']['clickhouse']['enable'] = False
                         cfg['model']['indicators']['clickhouse']['black_list'] = []
                         cfg['model']['indicators']['clickhouse']['white_list'] = []
                         with open(path, 'w') as f:
@@ -72,4 +72,4 @@ def fix_fee(path_to_models):
     with open('temp_files/fee_crypto_futures.json', 'w') as f:
         json.dump(fee_configs, f, indent=2)
 
-fix_fee(path_to_model)
+fix_indicatators(path_to_model, 'os-prod-6')
